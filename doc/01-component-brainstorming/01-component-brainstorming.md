@@ -1,12 +1,10 @@
 # Portfolio Part 1: Component Brainstorming
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) then delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) then delete this comment -->
-- **Due Date**: <!-- TODO: fill with due date and time (e.g., 10/17 @ 3:10 PM EST) then delete this comment -->
+- **Name**: Gabriel Aboumrad
+- **Dot Number**: aboumrad.3
+- **Due Date**: 9/13/2024 4:10
 
 ## Assignment Overview
-
-<!-- TODO: read the assignment overview then delete this comment -->
 
 The overall goal of the portfolio project is to have you design and implement
 your own OSU component. There are no limits to what you choose to design and
@@ -29,8 +27,6 @@ implement.
 
 ## Assignment Checklist
 
-<!-- TODO: browse the checklist then delete this comment -->
-
 To be sure you have completed everything on this assignment, we have littered
 this document with TODO comments. You can browse all of them in VSCode by
 opening the TODOs window from the sidebar. The icon looks like a tree and will
@@ -52,8 +48,6 @@ to the tree diagram (you may remove this one as well):
 
 ## Assignment Learning Objectives
 
-<!-- TODO: read the assignment learning objectives then delete this comment -->
-
 Without learning objectives, there really is no clear reason why a particular
 assessment or activity exists. Therefore, to be completely transparent, here is
 what we're hoping you will learn through this particular aspect of the portfolio
@@ -66,8 +60,6 @@ project. Specifically, students should be able to:
    discipline
 
 ## Assignment Rubric: 10 Points
-
-<!-- TODO: read the assignment rubric then delete this comment -->
 
 Again, to be completely transparent, most of the portfolio project, except the
 final submission, is designed as a formative assessment. Formative assessments
@@ -98,23 +90,17 @@ do good work.
 > brainstorming. Plus it helps us get to know you better! Feel free to share
 > images in this section.
 
-<!-- TODO: briefly talk about your interests then delete this comment.
-Also, protip: you can preview what your response looks like by hitting
-the magnifying glass icon in the upper-right corner or pressing CTRL+K and
-then V. This kind of button combination is called a chord, for whatever
-reason -->
+My career goal is to become either a software engineer or game developer. My
+hobbies include playing basketball, video games, going on walks, and lifting
+weights.
 
 ## Assignment
-
-<!-- TODO: read the assignment section then delete this comment -->
 
 As previously stated, you are tasked with brainstorming 3 possible components.
 To aid you in this process, we have provided [some example components][example-components]
 that may help you in your brainstorming. All of these components were made at
 some point by one of your peers, so you should feel confident that you can
 accomplish any of them.
-
-<!-- TODO: browse the list of possible projects then delete this comment -->
 
 There is no requirement that you use any of the components listed above.
 If you want to model something else, go for it! Very common early object
@@ -123,8 +109,6 @@ etc. Make of this whatever seems interesting to you, and keep in mind that
 you're just brainstorming right now. You do not have to commit to anything.
 
 ### Example Component
-
-<!-- TODO: review this example component then delete this comment -->
 
 To help you brainstorm a few components, we've provided an example below of a
 component you already know well: NaturalNumber. We highly recommend that you
@@ -157,10 +141,10 @@ format, we can be more confident that your designs will be possible.
         mutate `this`.
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-        - No. All methods work with integers or other NaturalNumbers.
+      - No. All methods work with integers or other NaturalNumbers.
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-        - Yes. NaturalNumber is base 10, and we track that in a constant called
+      - Yes. NaturalNumber is base 10, and we track that in a constant called
           `RADIX`.
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
@@ -192,70 +176,127 @@ will likely refine your design to make your implementation easier to use.
 
 > Please use this section to share your designs.
 
-- Component Design #1: <!-- TODO: give component a name then delete this comment -->
+- Component Design #1: Table
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - A representation of a 2D array or table.
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - `void add(int row, int column, T entry)`: adds `entry` at row `row` and
+    column `column`, and adjusts table size if needed.
+    - `T remove(int row, int column)`: remove entry at row `row`
+    and column `column`, returns it, and adjusts table size if needed.
+    - `int rows()`: returns the number of rows in `this`.
+    - `int columns()`: returns the number of columns in `this`.
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - `void addRow(int location, Sequence<T> entries)`: adds `entries` as a row
+    to the table at index `location` and shifts following rows down.
+    - `void addColumn(int location, Sequence<T> entries)`: adds `entries` as a
+    column to the table at index `location` and shifts following columns right.
+    - `Sequence<T> removeRow(int location)`: remove the row at `locataion`,
+    returns it, and shifts following rows up.
+    - `Sequence<T> removeColumn(int location)`: remove the column at
+    `locataion`, returns it, and shifts following columns left.
+    - `T entry(int row, int column)`: reports the entry at row `row` and column
+    `column`.
+    - `T replace(int row, int column, T entry)`: replaces the entry at row `row`
+    and column `column`, replaces it with `entry`, and returns the old entry.
+    - `boolean isEmtpy()`: reports whether `this` is empty.
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, it will inherit from Standard.
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes. It will be built using Sequence.
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - I don't know.
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, the only changes that need to be made to the table are adding and
+      removing entries. isEmpty can check if size returns (0,0).
 
-
-- Component Design #2: <!-- TODO: give component a name then delete this comment -->
+- Component Design #2: Tracker
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - A tracker that can directly change the value of numerical statistics that
+    are named with Strings.
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - `void setValue(String name, int value)`: adds `name` to `this` with
+    initial value `value`. If `name` is already in `this`, sets its value to
+    `value` instead.
+    - `int remove(String name)`: removes `name` from `this` and returns its
+    value.
+    - `int size()`: reports the size of `this`.
+    - `int value(String name)`: reports the value of `name`.
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - `void toZero(String name)`: sets the value of `name` to zero.
+    - `void add(String name, int n)`: adds `n` to the value of `name`.
+    - `void subtract(String name, int n)`: subtracts `n` from the value of
+    `name`.
+    - `void multiply(String name, int n)`: multiplies the value of `name` by
+    `n`.
+    - `int divide(String name, int n)`: divides the value of `name` by `n`,
+    returning the remainder.
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, it will inherit from Standard.
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes. It will build on Map.
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - I don't know.
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes. All of the secondary methods replace a value in the tracker. This
+      can be done by removing a value, changing it, and then adding it back.
 
-
-- Component Design #3: <!-- TODO: give component a name then delete this comment -->
+- Component Design #3: Slider
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - A representation of a slider that can have any value betweem a set min and
+    max, both of which must be positive.
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - `void set(float n)`: sets the value of `this` to `n`.
+    - `void setMin(float min)`: sets the minimum value of `this` to `min`. If
+    the current value is less then the new minimum, sets the value to the new
+    minimum. `min` must be less than the current max.
+    - `void setMax(float max)`: sets the maximum value of `this` to `max`. If
+    the current value is greater then the new maximum, sets the value to the new
+    maximum. `max` must be less than the current max.
+    - `float value()`: reports the value of `this`.
+    - `float min()`: reports the minimum of `this`.
+    - `float max()`: reports the maximum of `this`.
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - `void toMin()`: sets the value of `this` to its minimum value.
+    - `void toMax()`: sets the value of `this` to its maximum value.
+    - `boolean increase(float n)`: increases the value of `this` by `n` if it
+    would not exceed the maximum value. Returns whether the increase was
+    successful.
+    - `boolean decrease(float n)`: decreases the value of `this` by `n` if it
+    would not exceed the minimum value. Returns whether the decrease was
+    successful.
+    - `boolean increment()`: increases the value of `this` by 1 if it
+    would not exceed the maximum value. Returns whether the increase was
+    successful.
+    - `boolean decrement()`: decreases the value of `this` by 1 if it
+    would not exceed the minimum value. Returns whether the decrease was
+    successful.
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, it will inherit from Standard.
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes. It will likely be built on Sequence with length 3 to store the min,
+      max, and current values.
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - I don't know.
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes. The secondary methods adjust the value of the slider, which can be
+      done with the set method. For example, toMin will use the min method to
+      get the min, and the set method to set the value.
 
 ## Post-Assignment
 
@@ -263,8 +304,6 @@ The following sections detail everything that you should do once you've
 completed the assignment.
 
 ### Changelog
-
-<!-- TODO: create CHANGELOG then delete this comment -->
 
 At the end of every assignment, you should update the
 [CHANGELOG.md](../../CHANGELOG.md) file found in the root of the project folder.
@@ -303,8 +342,6 @@ of development.
 
 ### Submission
 
-<!-- TODO: read the submission instructions then delete this comment -->
-
 If you have completed the assignment using this template, we recommend that
 you convert it to a PDF before submission. If you're not sure how, check out
 this [Markdown to PDF guide][markdown-to-pdf-guide]. However, PDFs should be
@@ -313,11 +350,7 @@ all your work is there before submitting. For future assignments, you will
 just be submitting a link to a pull request. This will be the only time
 you have to submit any PDFs.
 
-<!-- TODO: upload a PDF of this document and the CHANGELOG to Carmen then delete this comment -->
-
 ### Peer Review
-
-<!-- TODO: review the peer review guidelines then delete this comment -->
 
 Following the completion of this assignment, you will be assigned three
 students' component brainstorming assignments for review. Your job during the
@@ -343,8 +376,6 @@ PDF to read this rubric as a table).
 If you'd like to give feedback for this assignment (or any assignment, really),
 make use of [this survey][survey]. Your feedback helps make assignments
 better for future students.
-
-<!-- TODO: follow the link to share your feedback then delete this comment -->
 
 [example-components]: https://therenegadecoder.com/code/the-never-ending-list-of-small-programming-project-ideas/
 [markdown-to-pdf-guide]: https://therenegadecoder.com/blog/how-to-convert-markdown-to-a-pdf-3-quick-solutions/
