@@ -13,3 +13,14 @@ the following form: YYYY.0M.0D.
 - Designed a Table component
 - Designed a Tracker component
 - Designed a Slider component
+
+## [2024.10.03]
+
+### Added
+
+- Designed a proof of concept for Tracker component.
+
+### Updated
+
+- Changed design by adding a return to toZero.
+- Added both empty and argument constructors.
