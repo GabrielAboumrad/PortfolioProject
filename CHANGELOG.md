@@ -6,11 +6,22 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Calendar Versioning](https://calver.org/) of
 the following form: YYYY.0M.0D.
 
+## [2024.10.30]
+
+### Added
+
+- Designed abstract class for Tracker component.
+
+### Updated
+
+- Changed design to include toString and equals methods.
+- Implemented all secondary methods.
+  
 ## [2024.10.20]
 
 ### Added
 
-- Designed kernel and enhanced interfaces for Tracker component
+- Designed kernel and enhanced interfaces for Tracker component.
 
 ### Updated
 
@@ -35,14 +46,3 @@ the following form: YYYY.0M.0D.
 - Designed a Table component
 - Designed a Tracker component
 - Designed a Slider component
-
-## [2024.10.03]
-
-### Added
-
-- Designed a proof of concept for Tracker component.
-
-### Updated
-
-- Changed design by adding a return to toZero.
-- Added both empty and argument constructors.
