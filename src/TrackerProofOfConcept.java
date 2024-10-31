@@ -162,8 +162,9 @@ public class TrackerProofOfConcept {
             //play game
             for (int i = 1; i <= rounds; i++) {
                 Random rand = new Random1L();
-                score.add(p1, rand.nextInt() / 100000);
-                score.add(p2, rand.nextInt() / 100000);
+                final int range = 100000;
+                score.add(p1, rand.nextInt() / range);
+                score.add(p2, rand.nextInt() / range);
 
                 out.println("\nScore after round " + i + ": ");
                 out.println(p1 + ": " + score.value(p1));
