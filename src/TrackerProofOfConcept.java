@@ -32,7 +32,7 @@ public class TrackerProofOfConcept {
     /**
      * No-argument constructor.
      */
-    public Tracker() {
+    public TrackerProofOfConcept() {
 
         this.createNewRep();
 
@@ -44,7 +44,7 @@ public class TrackerProofOfConcept {
      * @param args
      *            {@code String}s to initialize from
      */
-    public Tracker(String... args) {
+    public TrackerProofOfConcept(String... args) {
 
         this.createNewRep();
         for (int i = 0; i < args.length; i++) {
@@ -151,13 +151,13 @@ public class TrackerProofOfConcept {
         int rounds = in.nextInteger();
 
         //create win tracker
-        Tracker wins = new Tracker(p1, p2);
+        TrackerProofOfConcept wins = new TrackerProofOfConcept(p1, p2);
 
         boolean replay = true;
         while (replay) {
 
             //create score tracker
-            Tracker score = new Tracker(p1, p2);
+            TrackerProofOfConcept score = new TrackerProofOfConcept(p1, p2);
 
             //play game
             for (int i = 1; i <= rounds; i++) {
