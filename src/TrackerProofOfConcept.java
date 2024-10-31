@@ -9,7 +9,7 @@ import components.simplewriter.SimpleWriter1L;
 /**
  * A statistic tracker proof of concept represented as a {@code Map}.
  */
-public class Tracker {
+public class TrackerProofOfConcept {
 
     /**
      * representation of {@code this}.
