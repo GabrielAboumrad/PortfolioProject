@@ -28,8 +28,7 @@ the following form: YYYY.0M.0D.
 
 - Changed design to include toString and equals methods.
 - Implemented all secondary methods.
-  
->>>>>>> main
+
 ## [2024.10.20]
 
 ### Added
