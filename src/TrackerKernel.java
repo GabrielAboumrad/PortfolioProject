@@ -46,11 +46,10 @@ public interface TrackerKernel
      *
      * @param value
      *            The value of the statistic
-     * @return whether name was already in this
      * @updates this
      * @ensures (name, value) is in this
      */
-    boolean setValue(String name, int value);
+    void setValue(String name, int value);
 
     /**
      * Reports the size of {@code this}.
@@ -100,4 +99,14 @@ public interface TrackerKernel
      * </pre>
      */
     Map.Pair<String, Integer> removeAny();
+
+    /**
+     * Returns whether {@code name} is in {@code this}.
+     *
+     * @param name
+     *            the name of the statistic to check for
+     * @return if {@code name} is in {@code this}
+     * @requires |this| > 0
+     */
+    boolean contains(String name);
 }
