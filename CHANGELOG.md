@@ -6,6 +6,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Calendar Versioning](https://calver.org/) of
 the following form: YYYY.0M.0D.
 
+## [2024.11.21]
+
+### Added
+
+- Completed Tracker1L Kernel implimentation for Tracker component.
+- Implimented Iterator for Tracker component.
+
+### Updated
+
+- Changed design to include contains method.
+- Removed return from setValue method.
+
 ## [2024.10.30]
 
 ### Added
@@ -16,7 +28,7 @@ the following form: YYYY.0M.0D.
 
 - Changed design to include toString and equals methods.
 - Implemented all secondary methods.
-  
+
 ## [2024.10.20]
 
 ### Added
