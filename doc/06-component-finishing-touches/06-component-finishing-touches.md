@@ -1,8 +1,8 @@
 # Portfolio Part 6: Finishing Touches
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) and delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) and delete this comment -->
-- **Due Date**: <!-- TODO: fill out with due date and time (e.g., 10/17 @ 3:10 PM EST) and delete this comment -->
+- **Name**: Gabriel Aboumrad
+- **Dot Number**: aboumrad.3
+- **Due Date**: 12/04/24 4:10
 
 ## Assignment Overview
 
@@ -49,8 +49,6 @@ Many of these additional techniques are somewhat out of the scope of this
 course, but just knowing about them could set you up for long term success.
 
 ## Assignment Checklist
-
-<!-- TODO: browse the checklist then delete this comment -->
 
 To be sure you have completed everything on this assignment, we have littered
 this document with TODO comments. You can browse all of them in VSCode by
@@ -131,8 +129,6 @@ merges, you will need to pull the changes from main into your current branch
 to see them. If you don't like this workflow, you may try following the
 rebase strategies described [here](https://stackoverflow.com/questions/35790561/working-while-waiting-for-pending-pr)
 and [here](https://stackoverflow.com/questions/18021888/continue-working-on-a-git-branch-after-making-a-pull-request).
-
-<!-- TODO: make a new branch from main then delete this comment -->
 
 ## Assignment Tasks
 
@@ -298,18 +294,24 @@ Take some time to fill them out honestly.
 > complete the portfolio project, how much better (or worse) do you think you
 > understand software development and why?
 
-<!-- TODO: discuss -->
+I think I understand software development much better now. I now realize that a
+major part of development is creating your own tools to succeed, rather than
+trying to find a component that perfectly matches your needs.
 
 > Also, did the portfolio project surface any gaps in your own knowledge of
 > software development. If so, what are those gaps and how did you address them?
 
-<!-- TODO: discuss -->
+There were plenty of gaps in my knowledge that this project helped me adress.
+For example, I never really understood the usefulness of interfaces and layering
+classes until I realized how much easier it makes components to impliment.
 
 > Finally, as a part of completing the portfolio project, to what extent has
 > your perspective of software development changed, if at all? In other words,
 > is software development something you still enjoy? If not, why not?
 
-<!-- TODO: discuss -->
+After completing the projected, I feel that I now enjoy software development
+more than ever. Its very satisfying to see the result of something that I have
+been working on for such a long time.
 
 > One of the challenges of completing the portfolio project is picking up a lot
 > of skills on your own. Some of these skills are, of course, software skills.
@@ -317,25 +319,33 @@ Take some time to fill them out honestly.
 > this process. Therefore, the first question is what skills did you pick up
 > through this process?
 
-<!-- TODO: discuss -->
+I picked up the skill of choosing a managable project for a given timeframe.
+My initial goals for this project were much higher, but I decided to bring them
+down to a much more realistic level.
 
 > The follow-up question is: could you rephrase these skills you picked up
 > as bullet points that you could put on a resume? Try it below.
 
-<!-- TODO: discuss -->
+Manage work efficiently to meet deadlines.
 
 > Next, how has working on this project affected your career trajectory?
 > In other words, do you now hate the topic you picked? Or, are you even more
 > interested in it? Both outcomes are valuable to your personal development.
 
-<!-- TODO: discuss -->
+I always liked programming, but I had planned to enter a different field than
+software development. After this project, however, I am much more interested
+in software development specifically and will definately consider it as a carrer
+path in the future.
 
 > Finally, consider the skills you've picked up and your current career
 > trajectory. What are some things you could do to continue on your
 > career trajectory? Also, who are some mentors you could contact to help
 > you stay on your path?
 
-<!-- TODO: discuss -->
+I would like to work on more projects similar to this one on my own time. I
+think I will now be able to choose manageable ones, and completing them will
+help me develop as a programmer and add to my resume. I have plenty of
+software developers in my familiy that are willing to assist me on mt path.
 
 ### Changelog
 
@@ -374,8 +384,6 @@ like to accomplish that, you will need to make GitHub releases after each pull
 request merge (or at least tag your commits). This is not required.
 
 ### Submission
-
-<!-- TODO: read the submission instructions then delete this comment -->
 
 Assuming that your project is in a GitHub repo somewhere and your changes are on
 a proof-of-concept branch, then what we'll want you to do is create a pull
@@ -429,5 +437,4 @@ better for future students.
 
 <!-- TODO: follow the link to share your feedback then delete this comment -->
 
-[markdown-to-pdf-guide]: https://therenegadecoder.com/blog/how-to-convert-markdown-to-a-pdf-3-quick-solutions/
 [survey]: https://forms.gle/dumXHo6A4Enucdkq9
