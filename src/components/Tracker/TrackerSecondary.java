@@ -1,3 +1,5 @@
+package components.Tracker;
+
 import components.map.Map;
 
 /**
@@ -32,18 +34,24 @@ public abstract class TrackerSecondary extends Object implements Tracker {
 
     @Override
     public void divide(String name, int n) {
+        assert n != 0 : "Cannot divide by 0";
+
         int original = this.value(name);
         this.setValue(name, original / n);
     }
 
     @Override
     public void power(String name, int n) {
+        assert n >= 0 : "Violation of: n>=0";
+
         int original = this.value(name);
         this.setValue(name, (int) Math.pow(original, n));
     }
 
     @Override
     public void root(String name, int n) {
+        assert n >= 2 : "Violation of: n>=2";
+
         int original = this.value(name);
         this.setValue(name, (int) Math.pow(original, 1 / n));
     }
@@ -120,9 +128,10 @@ public abstract class TrackerSecondary extends Object implements Tracker {
 
         for (Map.Pair<String, Integer> item : this) {
 
-            result += "(" + item.key() + ", " + item.value().toString() + "), ";
+            result += "(" + item.key() + ": " + item.value().toString() + "), ";
         }
 
+        result = result.substring(0, result.length() - 2);
         result += "}";
 
         return result;
