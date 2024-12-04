@@ -13,9 +13,16 @@ the following form: YYYY.0M.0D.
 - Completed Tracker1L Kernel implimentation for Tracker component.
 - Implimented Iterator for Tracker component.
 
+## [2024.11.19]
+
+### Added
+
+- Contains method for Tracker component.
+
 ### Updated
 
 - Changed design to include contains method.
+- Updated equals method for Tracker.
 - Removed return from setValue method.
 
 ## [2024.10.30]
